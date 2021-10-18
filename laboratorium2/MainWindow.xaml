@@ -1,0 +1,15 @@
+﻿<Window x:Class="laboratorium2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:laboratorium2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="marka_button" Content="MARKA" HorizontalAlignment="Left" Margin="91,283,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="silnik_button" Content="SILNIK" HorizontalAlignment="Left" Margin="380,283,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="cena_label" Content="CENA" Margin="646,283,107.6,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
