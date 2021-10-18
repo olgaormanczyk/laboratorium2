@@ -30,13 +30,15 @@ namespace laboratorium2
         private void marka_button_Click(object sender, RoutedEventArgs e)
         {
             Window1 okno1 = new Window1();
-            okno1.Show();
+            okno1.ShowDialog();
+            cena = okno1.cena1 + int.Parse(okno1.polisa_textbox.Text);
+            cena_label.Content = cena;
         }
 
         private void silnik_button_Click(object sender, RoutedEventArgs e)
         {
-            Window1 okno2 = new Window1();
-            okno2.Show();
+            Window2 okno2 = new Window2();
+            okno2.ShowDialog();
         }
     }
 }

@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <RadioButton x:Name="fiat_radiobutton" Content="FIAT" HorizontalAlignment="Left" Margin="84,279,0,0" VerticalAlignment="Top" Height="21" Width="123" Checked="marka_radiobutton_Checked"/>
-        <RadioButton x:Name="ford_radiobutton" Content="FORD" HorizontalAlignment="Left" Margin="84,300,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="ferrari_radiobutton" Content="FERRARI" HorizontalAlignment="Left" Margin="84,320,0,0" VerticalAlignment="Top" Height="26"/>
-        <CheckBox x:Name="czujniki_checkbox" Content="CZUJNIKI COFANIA" HorizontalAlignment="Left" Margin="307,320,0,0" VerticalAlignment="Top" Height="56" RenderTransformOrigin="0.312,0.511" Width="141"/>
-        <CheckBox Content="KLIMATYZACJA" HorizontalAlignment="Left" Margin="307,288,0,0" VerticalAlignment="Top" Height="20" Width="111"/>
-        <CheckBox x:Name="radio_checkbox" Content="RADIO" HorizontalAlignment="Left" Margin="307,257,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="22" Width="78">
+        <RadioButton x:Name="fiat_radiobutton" Content="FIAT" HorizontalAlignment="Left" Margin="84,279,0,0" VerticalAlignment="Top" Height="21" Width="123" Checked="fiat_radiobutton_Checked" Unchecked="fiat_radiobutton_Unchecked"/>
+        <RadioButton x:Name="ford_radiobutton" Content="FORD" HorizontalAlignment="Left" Margin="84,300,0,0" VerticalAlignment="Top" Unchecked="ford_radiobutton_Unchecked" Checked="ford_radiobutton_Checked"/>
+        <RadioButton x:Name="ferrari_radiobutton" Content="FERRARI" HorizontalAlignment="Left" Margin="84,320,0,0" VerticalAlignment="Top" Height="26" Checked="ferrari_radiobutton_Checked" Unchecked="ferrari_radiobutton_Unchecked"/>
+        <CheckBox x:Name="czujniki_checkbox" Content="CZUJNIKI COFANIA" HorizontalAlignment="Left" Margin="307,320,0,0" VerticalAlignment="Top" Height="56" RenderTransformOrigin="0.312,0.511" Width="141" Checked="czujniki_checkbox_Checked" Unchecked="czujniki_checkbox_Unchecked"/>
+        <CheckBox x:Name="klimatyzacja_checkbox" Content="KLIMATYZACJA" HorizontalAlignment="Left" Margin="307,288,0,0" VerticalAlignment="Top" Height="20" Width="111" Checked="klimatyzacja_checkbox_Checked" Unchecked="klimatyzacja_checkbox_Unchecked"/>
+        <CheckBox x:Name="radio_checkbox" Content="RADIO" HorizontalAlignment="Left" Margin="307,257,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="22" Width="78" Checked="radio_checkbox_Checked" Unchecked="radio_checkbox_Unchecked">
             <CheckBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -22,12 +22,12 @@
                 </TransformGroup>
             </CheckBox.RenderTransform>
         </CheckBox>
-        <CheckBox x:Name="podgrzewane_lusterks_checkbox" Content="PODGRZEWANE LUSTERKA" HorizontalAlignment="Left" Margin="307,225,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="elektryczne_szyby_checkbox" Content="ELEKTRYCZNE SZYBY" HorizontalAlignment="Left" Margin="307,192,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="polisa_textbox" HorizontalAlignment="Left" Height="81" Margin="634,114,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="podgrzewane_lusterks_checkbox" Content="PODGRZEWANE LUSTERKA" HorizontalAlignment="Left" Margin="307,225,0,0" VerticalAlignment="Top" Checked="podgrzewane_lusterks_checkbox_Checked" Unchecked="podgrzewane_lusterks_checkbox_Unchecked"/>
+        <CheckBox x:Name="elektryczne_szyby_checkbox" Content="ELEKTRYCZNE SZYBY" HorizontalAlignment="Left" Margin="307,192,0,0" VerticalAlignment="Top" Checked="elektryczne_szyby_checkbox_Checked" Unchecked="elektryczne_szyby_checkbox_Unchecked"/>
+        <TextBox x:Name="polisa_textbox" HorizontalAlignment="Left" Height="81" Margin="634,114,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" TextChanged="polisa_textbox_TextChanged"/>
         <Label x:Name="polisa_label" Content="POLISA" HorizontalAlignment="Left" Margin="634,88,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="cena_label" Content="CENA" Margin="665,245,88.6,0" VerticalAlignment="Top"/>
-        <Label x:Name="cena_label_" Content="0" HorizontalAlignment="Left" Margin="665,271,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="cena_label2" Content="CENA" Margin="634,245,119.6,0" VerticalAlignment="Top"/>
+        <Label x:Name="cena_label" Content="0" HorizontalAlignment="Left" Margin="634,271,0,0" VerticalAlignment="Top" Width="119"/>
 
     </Grid>
 </Window>

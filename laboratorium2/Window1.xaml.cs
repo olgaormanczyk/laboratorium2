@@ -26,9 +26,113 @@ namespace laboratorium2
             cena_label.Content = this.cena1;
         }
 
-        private void marka_radiobutton_Checked(object sender, RoutedEventArgs e)
+
+        private void fiat_radiobutton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            cena1 -= 10000;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+        private void ford_radiobutton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            cena1 -= 50000;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+        private void ford_radiobutton_Checked(object sender, RoutedEventArgs e)
+        {
+            cena1 += 50000;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+        private void fiat_radiobutton_Checked(object sender, RoutedEventArgs e)
+        {
+            cena1 += 10000;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+        private void ferrari_radiobutton_Checked(object sender, RoutedEventArgs e)
+        {
+            cena1 += 2000000;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+        private void ferrari_radiobutton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            cena1 -= 2000000;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+        private void elektryczne_szyby_checkbox_Checked(object sender, RoutedEventArgs e)
+        {
+            cena1 += 200;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+        private void podgrzewane_lusterks_checkbox_Checked(object sender, RoutedEventArgs e)
+        {
+            cena1 += 200;
+            if (polisa_textbox.Text.Length > 0)
+            {
+                cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+            }
+        }
+
+        private void radio_checkbox_Checked(object sender, RoutedEventArgs e)
+        {
+            cena1 += 500;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+
+        private void czujniki_checkbox_Checked(object sender, RoutedEventArgs e)
+        {
+            cena1 += 1000;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+        private void klimatyzacja_checkbox_Checked(object sender, RoutedEventArgs e)
+        {
+            cena1 += 2000;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+        private void elektryczne_szyby_checkbox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            cena1 -= 200;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+ 
+
+        private void podgrzewane_lusterks_checkbox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            cena1 -= 200;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+
+        private void radio_checkbox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            cena1 -= 500;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+        private void klimatyzacja_checkbox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            cena1 -= 2000;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+        private void czujniki_checkbox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            cena1 -= 1000;
+            cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
+        }
+
+        private void polisa_textbox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+// cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
         }
     }
 }

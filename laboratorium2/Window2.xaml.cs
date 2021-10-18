@@ -19,6 +19,7 @@ namespace laboratorium2
     /// </summary>
     public partial class Window2 : Window
     {
+        public int cena1 = 0;
         public Window2()
         {
             InitializeComponent();
@@ -26,7 +27,56 @@ namespace laboratorium2
 
         private void moc_combobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            cena1 += 10000;
+            cena_label.Content = cena1;
+        }
 
+        private void diesel_radiobutton_Checked(object sender, RoutedEventArgs e)
+        {
+            cena1 += 10000;
+            cena_label.Content = cena1;
+        }
+
+        private void gaz_radiobutton_Checked(object sender, RoutedEventArgs e)
+        {
+            cena1 += 50000;
+            cena_label.Content = cena1;
+        }
+
+        private void hybryda_radiobutton_Checked(object sender, RoutedEventArgs e)
+        {
+            cena1 += 90000;
+            cena_label.Content = cena1;
+        }
+
+        private void hybryda_radiobutton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            cena1 -= 90000;
+            cena_label.Content = cena1;
+        }
+
+        private void gaz_radiobutton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            cena1 -= 50000;
+            cena_label.Content = cena1;
+        }
+
+        private void diesel_radiobutton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            cena1 -= 10000;
+            cena_label.Content = cena1;
+        }
+
+        private void benzyna_radiobutton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            cena1 -= 30000;
+            cena_label.Content = cena1;
+        }
+
+        private void benzyna_radiobutton_Checked(object sender, RoutedEventArgs e)
+        {
+            cena1 += 30000;
+            cena_label.Content = cena1;
         }
     }
 }
