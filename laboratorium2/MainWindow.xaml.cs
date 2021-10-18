@@ -26,5 +26,17 @@ namespace laboratorium2
             InitializeComponent();
             cena_label.Content = this.cena;
         }
+
+        private void marka_button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 okno1 = new Window1();
+            okno1.Show();
+        }
+
+        private void silnik_button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 okno2 = new Window1();
+            okno2.Show();
+        }
     }
 }

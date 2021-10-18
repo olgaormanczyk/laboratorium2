@@ -7,7 +7,27 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <RadioButton x:Name="marka_radiobutton" Content="" HorizontalAlignment="Left" Margin="84,275,0,0" VerticalAlignment="Top" Height="65" Width="123"/>
+        <RadioButton x:Name="fiat_radiobutton" Content="FIAT" HorizontalAlignment="Left" Margin="84,279,0,0" VerticalAlignment="Top" Height="21" Width="123" Checked="marka_radiobutton_Checked"/>
+        <RadioButton x:Name="ford_radiobutton" Content="FORD" HorizontalAlignment="Left" Margin="84,300,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="ferrari_radiobutton" Content="FERRARI" HorizontalAlignment="Left" Margin="84,320,0,0" VerticalAlignment="Top" Height="26"/>
+        <CheckBox x:Name="czujniki_checkbox" Content="CZUJNIKI COFANIA" HorizontalAlignment="Left" Margin="307,320,0,0" VerticalAlignment="Top" Height="56" RenderTransformOrigin="0.312,0.511" Width="141"/>
+        <CheckBox Content="KLIMATYZACJA" HorizontalAlignment="Left" Margin="307,288,0,0" VerticalAlignment="Top" Height="20" Width="111"/>
+        <CheckBox x:Name="radio_checkbox" Content="RADIO" HorizontalAlignment="Left" Margin="307,257,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="22" Width="78">
+            <CheckBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.299"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+        <CheckBox x:Name="podgrzewane_lusterks_checkbox" Content="PODGRZEWANE LUSTERKA" HorizontalAlignment="Left" Margin="307,225,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="elektryczne_szyby_checkbox" Content="ELEKTRYCZNE SZYBY" HorizontalAlignment="Left" Margin="307,192,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="polisa_textbox" HorizontalAlignment="Left" Height="81" Margin="634,114,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="polisa_label" Content="POLISA" HorizontalAlignment="Left" Margin="634,88,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="cena_label" Content="CENA" Margin="665,245,88.6,0" VerticalAlignment="Top"/>
+        <Label x:Name="cena_label_" Content="0" HorizontalAlignment="Left" Margin="665,271,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

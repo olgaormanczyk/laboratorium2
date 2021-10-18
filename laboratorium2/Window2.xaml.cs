@@ -15,18 +15,16 @@ using System.Windows.Shapes;
 namespace laboratorium2
 {
     /// <summary>
-    /// Logika interakcji dla klasy Window1.xaml
+    /// Logika interakcji dla klasy Window2.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window2 : Window
     {
-        public int cena1 = 0;
-        public Window1()
+        public Window2()
         {
             InitializeComponent();
-            cena_label.Content = this.cena1;
         }
 
-        private void marka_radiobutton_Checked(object sender, RoutedEventArgs e)
+        private void moc_combobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
