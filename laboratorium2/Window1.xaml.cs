@@ -73,10 +73,7 @@ namespace laboratorium2
         private void podgrzewane_lusterks_checkbox_Checked(object sender, RoutedEventArgs e)
         {
             cena1 += 200;
-            if (polisa_textbox.Text.Length > 0)
-            {
-                cena_label.Content = cena1 + polisa;
-            }
+            cena_label.Content = cena1 + polisa;
         }
 
         private void radio_checkbox_Checked(object sender, RoutedEventArgs e)
@@ -132,15 +129,12 @@ namespace laboratorium2
 
         private void polisa_textbox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            //TextBox polisa_textbox = e.Source as TextBox;
-            //polisa = int.Parse(polisa_textbox.Text);
+            
             if(!int.TryParse(polisa_textbox.Text, out polisa))
             {
                 polisa = 0;
             }
             cena_label.Content = cena1 + polisa;
-            // polisa = cena1 + int.Parse(polisa_textbox.Text);
-            //  cena_label.Content = cena1 + int.Parse(polisa_textbox.Text);
 
         }
 
