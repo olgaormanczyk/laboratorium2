@@ -31,7 +31,7 @@ namespace laboratorium2
         {
             Window1 okno1 = new Window1();
             okno1.ShowDialog();
-            cena = okno1.cena1 + int.Parse(okno1.polisa_textbox.Text);
+            cena = okno1.cena1 + okno1.polisa;
             cena_label.Content = cena;
         }
 
@@ -39,6 +39,8 @@ namespace laboratorium2
         {
             Window2 okno2 = new Window2();
             okno2.ShowDialog();
+            cena = okno2.cena1 + okno2.cena_moc;
+            cena_label.Content = cena;
         }
     }
 }

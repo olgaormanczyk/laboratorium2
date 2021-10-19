@@ -9,7 +9,7 @@
     <Grid>
         <Button x:Name="marka_button" Content="MARKA" HorizontalAlignment="Left" Margin="91,283,0,0" VerticalAlignment="Top" Width="75" Click="marka_button_Click"/>
         <Button x:Name="silnik_button" Content="SILNIK" HorizontalAlignment="Left" Margin="380,283,0,0" VerticalAlignment="Top" Width="75" Click="silnik_button_Click"/>
-        <Label x:Name="cena_label" Content="0" Margin="646,280,107.6,0" VerticalAlignment="Top" Height="29"/>
+        <Label x:Name="cena_label" Content="0" Margin="588,311,117.6,0" VerticalAlignment="Top" Height="29"/>
         <Label x:Name="cena_label_Copy" Content="CENA" HorizontalAlignment="Left" Margin="588,280,0,0" VerticalAlignment="Top"/>
 
     </Grid>

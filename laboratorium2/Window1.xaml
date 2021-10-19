@@ -24,10 +24,10 @@
         </CheckBox>
         <CheckBox x:Name="podgrzewane_lusterks_checkbox" Content="PODGRZEWANE LUSTERKA" HorizontalAlignment="Left" Margin="307,225,0,0" VerticalAlignment="Top" Checked="podgrzewane_lusterks_checkbox_Checked" Unchecked="podgrzewane_lusterks_checkbox_Unchecked"/>
         <CheckBox x:Name="elektryczne_szyby_checkbox" Content="ELEKTRYCZNE SZYBY" HorizontalAlignment="Left" Margin="307,192,0,0" VerticalAlignment="Top" Checked="elektryczne_szyby_checkbox_Checked" Unchecked="elektryczne_szyby_checkbox_Unchecked"/>
-        <TextBox x:Name="polisa_textbox" HorizontalAlignment="Left" Height="81" Margin="634,114,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" TextChanged="polisa_textbox_TextChanged"/>
+        <TextBox x:Name="polisa_textbox" HorizontalAlignment="Left" Height="81" Margin="634,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="polisa_textbox_TextChanged"/>
         <Label x:Name="polisa_label" Content="POLISA" HorizontalAlignment="Left" Margin="634,88,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="cena_label2" Content="CENA" Margin="634,245,119.6,0" VerticalAlignment="Top"/>
-        <Label x:Name="cena_label" Content="0" HorizontalAlignment="Left" Margin="634,271,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label x:Name="cena_label2" Content="CENA" Margin="573,245,127.6,0" VerticalAlignment="Top"/>
+        <Label x:Name="cena_label" Content="0" HorizontalAlignment="Center" Margin="573,271,105.6,0" VerticalAlignment="Top" Width="115" Height="37"/>
 
     </Grid>
 </Window>

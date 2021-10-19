@@ -7,25 +7,29 @@
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="320*"/>
+        </Grid.ColumnDefinitions>
         <Label x:Name="paliwo_label" Content="PALIWO" HorizontalAlignment="Left" Margin="55,141,0,0" VerticalAlignment="Top" Width="60"/>
         <RadioButton x:Name="benzyna_radiobutton" Content="BENZYNA" HorizontalAlignment="Left" Margin="55,194,0,0" VerticalAlignment="Top" Unchecked="benzyna_radiobutton_Unchecked" Checked="benzyna_radiobutton_Checked"/>
         <RadioButton x:Name="diesel_radiobutton" Content="DIESEL" HorizontalAlignment="Left" Margin="55,214,0,0" VerticalAlignment="Top" Checked="diesel_radiobutton_Checked" Unchecked="diesel_radiobutton_Unchecked"/>
         <RadioButton x:Name="gaz_radiobutton" Content="GAZ" HorizontalAlignment="Left" Margin="55,234,0,0" VerticalAlignment="Top" Checked="gaz_radiobutton_Checked" Unchecked="gaz_radiobutton_Unchecked"/>
         <RadioButton x:Name="hybryda_radiobutton" Content="HYBRYDA" HorizontalAlignment="Left" Margin="55,254,0,0" VerticalAlignment="Top" Checked="hybryda_radiobutton_Checked" Unchecked="hybryda_radiobutton_Unchecked"/>
-        <Label x:Name="moc_label" Content="MOC" HorizontalAlignment="Left" Margin="314,141,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="moc_combobox" HorizontalAlignment="Left" Margin="314,194,0,0" VerticalAlignment="Top" Width="120" Height="103" SelectionChanged="moc_combobox_SelectionChanged">
+        <Label x:Name="moc_label" Content="MOC" HorizontalAlignment="Left" Margin="160.3,141,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <ComboBox x:Name="moc_combobox" HorizontalAlignment="Left" Margin="160.3,194,0,0" VerticalAlignment="Top" Width="120" Height="103" SelectionChanged="moc_combobox_SelectionChanged" Grid.Column="1">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
                     <GradientStop Color="#FFF0F0F0" Offset="1"/>
                 </LinearGradientBrush>
             </ComboBox.Background>
-            <ComboBoxItem Content="1.2" IsSelected="True"/>
+            <ComboBoxItem Content="1.2"/>
             <ComboBoxItem Content="5.0"/>
             <ComboBoxItem Content="2.0"/>
         </ComboBox>
-        <Label x:Name="cena_label2" Content="CENA" HorizontalAlignment="Left" Margin="562,141,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="cena_label" Content="0" Margin="562,184,116.6,0" VerticalAlignment="Top"/>
+        <Label x:Name="cena_label2" Content="CENA" HorizontalAlignment="Left" Margin="408.3,141,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="cena_label" Content="" Margin="408.3,184,116.6,0" VerticalAlignment="Top" Grid.Column="1"/>
 
     </Grid>
 </Window>
